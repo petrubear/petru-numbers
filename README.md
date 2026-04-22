@@ -25,7 +25,7 @@ A Neovim plugin that shows **absolute** and **relative** line numbers simultaneo
 
 ```lua
 {
-  "edisonneza/petru-numbers.nvim",
+  "petrubear/petru-numbers",
   opts = {},
 }
 ```
@@ -34,7 +34,7 @@ A Neovim plugin that shows **absolute** and **relative** line numbers simultaneo
 
 ```lua
 {
-  "edisonneza/petru-numbers.nvim",
+  "petrubear/petru-numbers",
   opts = {
     separator = " ",       -- characters between the two columns (default: " ")
     abs_hl    = "LineNr",  -- highlight group for the absolute number column
