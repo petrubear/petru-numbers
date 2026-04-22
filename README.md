@@ -36,10 +36,10 @@ A Neovim plugin that shows **absolute** and **relative** line numbers simultaneo
 {
   "petrubear/petru-numbers",
   opts = {
-    separator = " ",       -- characters between the two columns (default: " ")
-    abs_hl    = "LineNr",  -- highlight group for the absolute number column
-    rel_hl    = "LineNr",  -- highlight group for the relative number column
-    width     = 0,         -- minimum column width; 0 = auto (based on total line count)
+    separator = " ",                    -- characters between the two columns
+    abs_hl    = "PetruNumbersAbsolute", -- highlight group for the absolute column
+    rel_hl    = "PetruNumbersRelative", -- highlight group for the relative column
+    width     = 0,                      -- min column width; 0 = auto from line count
   },
 }
 ```
