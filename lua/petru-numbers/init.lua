@@ -16,7 +16,7 @@ function M.render_column()
   local width = M.config.width > 0 and M.config.width or #tostring(vim.fn.line("$"))
   local sep = M.config.separator
 
-  local abs_str = string.format("%*d", width, lnum)
+  local abs_str = string.format("%" .. width .. "d", lnum)
   local abs = "%#" .. M.config.abs_hl .. "#" .. abs_str .. "%#Normal#"
 
   -- On the current line, hide the relative number
@@ -24,7 +24,7 @@ function M.render_column()
     return abs .. sep .. string.rep(" ", width)
   end
 
-  local rel_str = string.format("%*d", width, relnum)
+  local rel_str = string.format("%" .. width .. "d", relnum)
   local rel = "%#" .. M.config.rel_hl .. "#" .. rel_str .. "%#Normal#"
 
   return abs .. sep .. rel
